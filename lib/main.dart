@@ -70,33 +70,107 @@ class MyApp extends StatelessWidget {
             //   ],
 
             // ),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            // child: Row(
+            //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            //   children: [
+            //     Container(
+            //       width: 100.00,
+            //       color: Colors.red,
+            //     ),
+            //     Container(
+            //       child: Column(
+            //         mainAxisAlignment: MainAxisAlignment.center,
+            //         children: [
+            //           Container(
+            //             height: 100.00,
+            //             width: 100.00,
+            //             color: Colors.yellow,
+            //           ),
+            //           Container(
+            //             height: 100.00,
+            //             width: 100.00,
+            //             color: Colors.yellow[200],
+            //           )
+            //         ],
+            //       ),
+            //     ),
+            //     Container(
+            //       width: 100.00,
+            //       color: Colors.green,
+            //     )
+            //   ],
+            // ),
+
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Container(
-                  width: 100.00,
-                  color: Colors.red,
+                CircleAvatar(
+                  radius: 50.00,
+                  backgroundImage: AssetImage('/Images/DP3 (2).jpg'),
                 ),
-                Container(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Container(
-                        height: 100.00,
-                        width: 100.00,
-                        color: Colors.yellow,
-                      ),
-                      Container(
-                        height: 100.00,
-                        width: 100.00,
-                        color: Colors.yellow[200],
-                      )
-                    ],
+                Text(
+                  'Anup Paul',
+                  style: TextStyle(
+                      fontSize: 40.00,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold),
+                ),
+                Text(
+                  'Flutter Developer',
+                  style: TextStyle(
+                      fontSize: 20.00,
+                      color: Colors.white,
+                      letterSpacing: 2.5,
+                      fontWeight: FontWeight.bold),
+                ),
+                SizedBox(
+                  height: 20.00,
+                  width: 150.00,
+                  child: Divider(
+                    color: Colors.white,
                   ),
                 ),
-                Container(
-                  width: 100.00,
-                  color: Colors.green,
+                Card(
+                  color: Colors.white,
+                  margin: EdgeInsets.symmetric(vertical: 10, horizontal: 40),
+                  // padding: EdgeInsets.all(10),
+                  child: Padding(
+                    padding: EdgeInsets.all(20.00),
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.phone,
+                          color: Colors.blue,
+                        ),
+                        SizedBox(width: 40),
+                        Text(
+                          "+881676029196",
+                          style: TextStyle(color: Colors.blue),
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+                Card(
+                  color: Colors.white,
+                  margin: EdgeInsets.symmetric(vertical: 10, horizontal: 40),
+                  // padding: EdgeInsets.all(10),
+                  child: Padding(
+                    padding: EdgeInsets.all(20.00),
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.email,
+                          color: Colors.blue,
+                        ),
+                        SizedBox(width: 40),
+                        Text(
+                          "anuppaul977@gmail.com",
+                          style: TextStyle(color: Colors.blue),
+                        )
+                      ],
+                    ),
+                  ),
                 )
               ],
             ),
